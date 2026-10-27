@@ -1,0 +1,68 @@
+@layer base {
+  /* Soft fill: a tinted well with no visible border. Hover deepens the tint;
+     focus lifts the field to the card colour with a thin primary edge and a
+     soft shadow. Shared by Input, Textarea and the Select trigger. */
+  .input {
+    font-family: var(--font-family-base);
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--foreground);
+    background-color: color-mix(in srgb, var(--foreground) 5%, var(--card));
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    padding: 0 var(--spacing-3);
+    width: 100%;
+    transition:
+      border-color var(--animation-duration-fast) ease,
+      background-color var(--animation-duration-fast) ease,
+      box-shadow var(--animation-duration-fast) ease;
+    outline: none;
+    /* 36px, the same as a medium Button, so they line up in a row. The text
+       stays 16px: iOS zooms into fields with smaller text. */
+    height: 2.25rem;
+    box-shadow: none;
+  }
+
+  .input::placeholder {
+    color: var(--muted-foreground);
+    opacity: 0.8;
+  }
+
+  .input:hover {
+    background-color: color-mix(in srgb, var(--foreground) 9%, var(--card));
+  }
+
+  .input:focus,
+  .input[data-state="open"] {
+    background-color: var(--card);
+    border-color: color-mix(in srgb, var(--primary) 55%, transparent);
+    box-shadow:
+      0 1px 2px rgb(0 0 0 / 0.06),
+      0 6px 16px -6px rgb(0 0 0 / 0.14);
+  }
+
+  .input[aria-invalid="true"] {
+    background-color: color-mix(in srgb, var(--error) 9%, var(--card));
+    border-color: color-mix(in srgb, var(--error) 55%, transparent);
+  }
+
+  .input[aria-invalid="true"]:focus {
+    background-color: var(--card);
+    border-color: var(--error);
+  }
+
+  .input:disabled {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+    cursor: not-allowed;
+    opacity: 0.75;
+    box-shadow: none;
+  }
+
+  :global(.dark) .input:focus,
+  :global(.dark) .input[data-state="open"] {
+    box-shadow:
+      0 1px 2px rgb(0 0 0 / 0.3),
+      0 8px 20px -6px rgb(0 0 0 / 0.5);
+  }
+}
