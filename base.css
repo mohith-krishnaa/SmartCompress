@@ -7,3 +7,107 @@
   /* System layers */
   --z-critical: 2000; /* Critical system notifications */
   /* spacing */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-12: 3rem;
+  --spacing-16: 4rem;
+  --spacing-20: 5rem;
+}
+
+:root {
+  --background: #f5f6f2;
+  --foreground: #171a17;
+  --surface: #ffffff;
+  --surface-foreground: #171a17;
+  --sidebar: #eef0e9;
+  --sidebar-foreground: #171a17;
+  --card: #ffffff;
+  --card-foreground: #171a17;
+  --popup: #ffffff;
+  --popup-foreground: #171a17;
+  --primary: #b6f35a;
+  --primary-foreground: #17200d;
+  --secondary: #e8ebdf;
+  --secondary-foreground: #272d24;
+  --accent: #e9f7d8;
+  --accent-foreground: #273c13;
+  --muted: #eceee8;
+  --muted-foreground: #6a7167;
+  --success: #27734a;
+  --success-foreground: #ffffff;
+  --error: #c63f3f;
+  --error-foreground: #ffffff;
+  --warning: #9a6414;
+  --warning-foreground: #ffffff;
+  --info: #2762a4;
+  --info-foreground: #ffffff;
+  --info-hover: #1f528d;
+  --info-active: #174575;
+  --border: #dfe3d9;
+  --font-family-base: 'DM Sans', sans-serif;
+  --font-family-display: 'Space Grotesk', sans-serif;
+  --font-family-monospace: 'DM Mono', monospace;
+  --font-family-cursive: cursive;
+  --shadow: 0 2px 10px rgba(20, 30, 15, 0.04);
+  --shadow-md: 0 8px 24px rgba(20, 30, 15, 0.08);
+  --shadow-lg: 0 18px 60px rgba(20, 30, 15, 0.14);
+  --shadow-focus: 0 0 0 3px rgba(182, 243, 90, 0.35);
+  --radius-sm: 0.45rem;
+  --radius: 0.75rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.4rem;
+  --radius-full: 999px;
+  --animation-duration-fast: 120ms;
+  --animation-duration-normal: 220ms;
+  --animation-duration-slow: 360ms;
+  --chart-color-1: #8acb3f;
+  --chart-color-2: #5b8bd9;
+  --chart-color-3: #a28ad6;
+  --chart-color-4: #d9a24d;
+  --chart-color-5: #48a99a;
+}
+
+.dark {
+  --background: #0b0d0b;
+  --foreground: #f2f5ef;
+  --surface: #131713;
+  --surface-foreground: #f2f5ef;
+  --sidebar: #101410;
+  --sidebar-foreground: #f2f5ef;
+  --card: #151a15;
+  --card-foreground: #f2f5ef;
+  --popup: #1b211a;
+  --popup-foreground: #f2f5ef;
+  --primary: #b6f35a;
+  --primary-foreground: #17200d;
+  --secondary: #242b22;
+  --secondary-foreground: #e9eee4;
+  --accent: #202b18;
+  --accent-foreground: #c8f795;
+  --muted: #1a2019;
+  --muted-foreground: #9aa395;
+  --success: #7ed69c;
+  --success-foreground: #092512;
+  --error: #ff8585;
+  --error-foreground: #340909;
+  --warning: #f4c16b;
+  --warning-foreground: #2d1a02;
+  --info: #8bbcff;
+  --info-foreground: #081c34;
+  --info-hover: #a5cbff;
+  --info-active: #6ba5f2;
+  --border: #293128;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.24);
+  --shadow-lg: 0 18px 60px rgba(0, 0, 0, 0.36);
+  --shadow-focus: 0 0 0 3px rgba(182, 243, 90, 0.25);
+  --chart-color-1: #b6f35a;
+  --chart-color-2: #83b4ff;
+  --chart-color-3: #c5a7ff;
+  --chart-color-4: #f4c16b;
+  --chart-color-5: #72d9c9;
+}
